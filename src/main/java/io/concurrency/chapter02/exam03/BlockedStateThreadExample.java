@@ -13,7 +13,7 @@ public class BlockedStateThreadExample {
         });
         Thread thread2 = new Thread(() -> {
             synchronized (lock) {
-                System.out.println("Thread 2 실행 중");
+                System.out.println("Thread 2 실행 중.. 락을 획득하려고 함.");
             }
         });
         thread1.start();

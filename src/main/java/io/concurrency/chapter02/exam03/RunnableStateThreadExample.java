@@ -7,7 +7,7 @@ public class RunnableStateThreadExample {
         Thread thread = new Thread(() -> {
             while (true) {
                 for (int i = 0; i < 1000000000; i++) {
-                    if(i%1000000000 == 0){
+                    if (i%1000000000 == 0){
                         System.out.println("스레드 상태: " + Thread.currentThread().getState()); // RUNNABLE
                     }
                 }
